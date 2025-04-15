@@ -1,57 +1,139 @@
-/* style.css */
-body {
-    font-family: "Segoe UI", sans-serif;
+:root {
+    --primary: #007acc;
+    --bg-light: #f9f9f9;
+    --bg-dark: #1e1e1e;
+    --text-light: #333;
+    --text-dark: #eee;
+    --card-bg-light: #fff;
+    --card-bg-dark: #2a2a2a;
+    --tag-bg: #e0f0ff;
+    --tag-dark-bg: #333;
+    --accent: #007acc;
+  }
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    background: var(--bg-light);
+    color: var(--text-light);
     margin: 0;
     padding: 0;
-    line-height: 1.6;
-    color: #333;
-    background-color: #f9f9f9;
+    transition: background 0.3s, color 0.3s;
+  }
+  
+  .container {
+    max-width: 1000px;
+    margin: auto;
+    padding: 2rem;
   }
   
   header {
-    background-color: #ffffff;
-    padding: 2rem;
-    text-align: center;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+  }
+  
+  header h1 {
+    margin: 0;
+  }
+  
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
   }
   
   nav a {
-    margin: 0 1rem;
-    color: #007acc;
     text-decoration: none;
+    color: var(--primary);
     font-weight: bold;
   }
   
-  nav a:hover {
-    text-decoration: underline;
+  #theme-toggle {
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
   }
   
   section {
-    max-width: 800px;
-    margin: 2rem auto;
-    padding: 1rem;
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    margin-bottom: 3rem;
   }
   
-  h1, h2 {
-    color: #222;
-  }
-  
-  ul {
-    padding-left: 1.2rem;
-  }
-  
-  li {
+  .card {
+    background: var(--card-bg-light);
+    border-radius: 10px;
+    padding: 1.5rem;
     margin-bottom: 1.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.03);
+    transition: background 0.3s;
+  }
+  
+  .tags, .tags-grid {
+    margin-top: 0.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  
+  .tag, .tags span {
+    background: var(--tag-bg);
+    color: var(--primary);
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 0.85rem;
+  }
+  
+  .buttons {
+    margin-top: 1rem;
+  }
+  
+  .btn {
+    display: inline-block;
+    background: var(--primary);
+    color: white;
+    text-decoration: none;
+    padding: 8px 14px;
+    border-radius: 6px;
+    margin-right: 10px;
+    transition: background 0.2s;
+  }
+  
+  .btn:hover {
+    background: #005a99;
   }
   
   footer {
     text-align: center;
     padding: 1rem;
-    margin-top: 2rem;
     color: #777;
-    font-size: 0.9rem;
+  }
+  
+  /* Dark Mode */
+  body.dark {
+    background: var(--bg-dark);
+    color: var(--text-dark);
+  }
+  
+  body.dark .card {
+    background: var(--card-bg-dark);
+  }
+  
+  body.dark nav a {
+    color: #66cfff;
+  }
+  
+  body.dark .tag, body.dark .tags span {
+    background: var(--tag-dark-bg);
+    color: #66cfff;
+  }
+  
+  body.dark .btn {
+    background: #66cfff;
+    color: #000;
   }
   

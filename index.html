@@ -5,81 +5,117 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Usman | Software Engineer Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
 </head>
 <body>
   <header>
-    <h1>Hi, I'm Usman</h1>
-    <p>Senior Software Engineer | .NET | Azure | SQL</p>
-    <nav>
-      <a href="#projects">Projects</a>
-      <a href="#tech">Tech Stack</a>
-      <a href="#resume">Resume</a>
-      <a href="#contact">Contact</a>
-    </nav>
+    <div class="container">
+      <h1>Hi, I'm Usman</h1>
+      <p>Senior Software Engineer | .NET | Azure | SQL</p>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#tech">Tech Stack</a>
+        <a href="#resume">Resume</a>
+        <a href="#contact">Contact</a>
+        <button id="theme-toggle">🌙</button>
+      </nav>
+    </div>
   </header>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>I’m a Senior Software Engineer with 5+ years of experience building cloud-native applications using .NET, Azure, and SQL Server. I specialize in backend development, automation, and scalable architecture. My focus is always on clean code, problem-solving, and performance.</p>
-  </section>
+  <main class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I’m a Senior Software Engineer with 5+ years of experience building cloud-native applications using .NET, Azure, and SQL Server. I specialize in backend development, automation, and scalable architecture. My focus is always on clean code, problem-solving, and performance.</p>
+    </section>
 
-  <section id="projects">
-    <h2>Professional Projects</h2>
-    <ul>
-      <li>
-        <h3>Enterprise SaaS Platform (Main Product)</h3>
-        <p>Leading the development of a large-scale SaaS solution for operational data management and analytics across multiple industries. The platform integrates real-time processing, dynamic reporting, and modular architecture.</p>
-        <p><strong>Tech:</strong> .NET Core, Azure App Services, SQL Server, Angular, Microservices</p>
-      </li>
-      <li>
+    <section id="projects">
+      <h2>Professional Projects</h2>
+      <div class="card">
         <h3>Alarm Engine with Deadband & Persistence</h3>
         <p>Built a highly optimized Azure-based alarm system reducing processing time from 3 hours to 25 seconds. Integrated advanced logic to prevent false alarms.</p>
-        <p><strong>Tech:</strong> C#, Azure Functions, SQL Server</p>
-      </li>
-      <li>
+        <div class="tags">C# | Azure Functions | SQL Server</div>
+        <div class="buttons">
+          <a href="#" class="btn">GitHub</a>
+          <a href="#" class="btn">Live Demo</a>
+        </div>
+      </div>
+      <div class="card">
         <h3>Fuel Reconciliation Portal</h3>
         <p>Developed a web portal for fuel stations to manage daily/weekly/monthly operations and detect losses using SIR logic.</p>
-        <p><strong>Tech:</strong> ASP.NET MVC, SQL, Power BI, Azure</p>
-      </li>
-    </ul>
-  </section>
+        <div class="tags">ASP.NET MVC | SQL | Power BI | Azure</div>
+        <div class="buttons">
+          <a href="#" class="btn">GitHub</a>
+          <a href="#" class="btn">Live Demo</a>
+        </div>
+      </div>
+      <div class="card">
+        <h3>Enterprise SaaS Platform (Main Product)</h3>
+        <p>Leading the development of a large-scale SaaS solution for operational data management and analytics across multiple industries. The platform integrates real-time processing, dynamic reporting, and modular architecture.</p>
+        <div class="tags">.NET Core | Azure | SQL Server | Angular | Microservices</div>
+        <div class="buttons">
+          <a href="#" class="btn">GitHub</a>
+          <a href="#" class="btn">Live Demo</a>
+        </div>
+      </div>
+    </section>
 
-  <section id="personal-projects">
-    <h2>Personal Projects</h2>
-    <ul>
-      <li>
+    <section id="personal-projects">
+      <h2>Personal Projects</h2>
+      <div class="card">
         <h3>YouTube Automation System</h3>
         <p>End-to-end pipeline that creates, voices, captions, and uploads AI-generated Shorts using GPT and ElevenLabs. Built to explore AI + content automation workflows.</p>
-        <p><strong>Tech:</strong> Python, GPT, ElevenLabs, YouTube API</p>
-      </li>
-    </ul>
-  </section>
+        <div class="tags">Python | GPT | ElevenLabs | YouTube API</div>
+        <div class="buttons">
+          <a href="#" class="btn">GitHub</a>
+          <a href="#" class="btn">Live Demo</a>
+        </div>
+      </div>
+    </section>
 
-  <section id="tech">
-    <h2>Tech Stack</h2>
-    <ul>
-      <li><strong>Languages:</strong> C#, Python, JavaScript, SQL</li>
-      <li><strong>Frameworks:</strong> .NET Core, ASP.NET MVC, Angular</li>
-      <li><strong>Cloud:</strong> Azure Functions, Logic Apps, Azure App Services, Azure Data Factory</li>
-      <li><strong>Database:</strong> SQL Server, Entity Framework</li>
-      <li><strong>Tools:</strong> GitHub, Azure DevOps, Postman, Swagger</li>
-    </ul>
-  </section>
+    <section id="tech">
+      <h2>Tech Stack</h2>
+      <div class="tags-grid">
+        <span class="tag">C#</span>
+        <span class="tag">Python</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">SQL</span>
+        <span class="tag">.NET Core</span>
+        <span class="tag">ASP.NET MVC</span>
+        <span class="tag">Angular</span>
+        <span class="tag">Azure Functions</span>
+        <span class="tag">Logic Apps</span>
+        <span class="tag">App Services</span>
+        <span class="tag">SQL Server</span>
+        <span class="tag">Entity Framework</span>
+        <span class="tag">Azure DevOps</span>
+        <span class="tag">Postman</span>
+        <span class="tag">Swagger</span>
+      </div>
+    </section>
 
-  <section id="resume">
-    <h2>Resume</h2>
-    <a href="resume.pdf" target="_blank" download>Download My Resume (PDF)</a>
-  </section>
+    <section id="resume">
+      <h2>Resume</h2>
+      <a href="resume.pdf" target="_blank" class="btn">Download My Resume (PDF)</a>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: <a href="mailto:usman.dev@example.com">usman.dev@example.com</a></p>
-    <p>LinkedIn: <a href="https://linkedin.com/in/usman" target="_blank">linkedin.com/in/usman</a></p>
-    <p>GitHub: <a href="https://github.com/ujavedodl" target="_blank">github.com/usmansoftwareengineer</a></p>
-  </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:usman.dev@example.com">usman.dev@example.com</a></p>
+      <p>LinkedIn: <a href="https://linkedin.com/in/usman" target="_blank">linkedin.com/in/usman</a></p>
+      <p>GitHub: <a href="https://github.com/usmansoftwareengineer" target="_blank">github.com/usmansoftwareengineer</a></p>
+    </section>
+  </main>
 
   <footer>
     <p>&copy; 2025 Usman. All rights reserved.</p>
   </footer>
+
+  <script>
+    const toggle = document.getElementById('theme-toggle');
+    toggle.addEventListener('click', () => {
+      document.body.classList.toggle('dark');
+    });
+  </script>
 </body>
 </html>
