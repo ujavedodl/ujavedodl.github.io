@@ -136,4 +136,12 @@
     background: #66cfff;
     color: #000;
   }
+  body.dark header {
+    background: var(--card-bg-dark);
+  }
   
+  body.dark header h1,
+  body.dark header p {
+    color: var(--text-dark);
+  }
+    
