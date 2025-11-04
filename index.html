@@ -3,104 +3,538 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Usman | Software Engineer Portfolio</title>
+  <title>Usman Javed | Senior Software Engineer</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <h1>Hi, I'm Usman</h1>
-      <p>Senior Software Engineer | .NET | Azure | SQL</p>
-      <nav>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#tech">Tech Stack</a>
-        <a href="#resume">Resume</a>
-        <a href="#contact">Contact</a>
-        <button id="theme-toggle">🌙</button>
-      </nav>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="nav-brand">UJ</div>
+      <div class="nav-links">
+        <a href="#hero" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#tech" class="nav-link">Skills</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme">
+          <span class="sun">☀️</span>
+          <span class="moon">🌙</span>
+        </button>
+      </div>
+      <button class="mobile-menu-btn" id="mobile-menu-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
-  </header>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-background">
+      <div class="gradient-orb orb-1"></div>
+      <div class="gradient-orb orb-2"></div>
+      <div class="gradient-orb orb-3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-text fade-in-up">
+        <span class="greeting">Hi there, I'm</span>
+        <h1 class="hero-title">
+          Usman Javed
+          <span class="title-gradient">.</span>
+        </h1>
+        <h2 class="hero-subtitle">Senior Software Engineer | SaaS Builder | Cloud Automation Expert</h2>
+        <p class="hero-description">
+          I build <span class="highlight">enterprise-grade SaaS platforms</span> and <span class="highlight">AI-powered applications</span> with .NET, Azure, and modern cloud technologies.
+          Specializing in backend architecture, automation, blockchain, and performance optimization.
+        </p>
+        <div class="hero-buttons">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <div class="mouse">
+        <div class="wheel"></div>
+      </div>
+      <div class="arrow">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="stats-section">
+    <div class="container">
+      <div class="stats-grid">
+        <div class="stat-card fade-in-up">
+          <div class="stat-number" data-target="5">0</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-card fade-in-up">
+          <div class="stat-number" data-target="1000">0</div>
+          <div class="stat-label">Fuel Stations Connected</div>
+        </div>
+        <div class="stat-card fade-in-up">
+          <div class="stat-number">99.7<span class="stat-percent">%</span></div>
+          <div class="stat-label">System Uptime</div>
+        </div>
+        <div class="stat-card fade-in-up">
+          <div class="stat-number">7200<span class="stat-times">×</span></div>
+          <div class="stat-label">Performance Boost</div>
+        </div>
+      </div>
+    </div>
+  </section>
 
   <main class="container">
-    <section id="about">
-      <h2>About Me</h2>
-      <p>I’m a Senior Software Engineer with 5+ years of experience building cloud-native applications using .NET, Azure, and SQL Server. I specialize in backend development, automation, and scalable architecture. My focus is always on clean code, problem-solving, and performance.</p>
+    <!-- About Section -->
+    <section id="about" class="section about-section">
+      <div class="section-header fade-in-up">
+        <span class="section-number">01.</span>
+        <h2 class="section-title">About Me</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-content">
+        <div class="about-text fade-in-up">
+          <p>
+            I'm a <strong>Senior Software Engineer</strong> with <strong>5+ years</strong> of experience 
+            building enterprise-grade cloud-native applications and <span class="highlight">SaaS platforms</span>. 
+            My passion lies in creating <span class="highlight">scalable architectures</span>, integrating 
+            <span class="highlight">AI technologies</span>, and solving complex technical challenges.
+          </p>
+          <p>
+            I specialize in backend development with <strong>.NET Core</strong>, <strong>Azure cloud services</strong>, 
+            and <strong>SQL Server</strong>. I've built systems that connect <strong>1000+ fuel stations</strong>, 
+            process millions of data points daily, optimized systems to achieve <strong>7200x performance improvements</strong>, 
+            and created AI-powered SaaS products with <strong>OpenAI and ElevenLabs</strong> integration.
+          </p>
+          <p>
+            Beyond traditional development, I've explored <span class="highlight">blockchain technology</span> 
+            and built <strong>decentralized applications</strong> with smart contracts. My approach focuses on 
+            <span class="highlight">clean code</span>, <span class="highlight">efficient algorithms</span>, 
+            and <span class="highlight">maintainable solutions</span> that deliver real business value.
+          </p>
+          <p class="about-quote">
+            "Code is like humor. When you have to explain it, it's bad." - Cory House
+          </p>
+        </div>
+      </div>
     </section>
 
-    <section id="projects">
-      <h2>Professional Projects</h2>
-      <div class="card">
-        <h3>Enterprise SaaS Platform (Main Product)</h3>
-        <p>Leading the development of a large-scale SaaS solution for operational data management and analytics across multiple industries. The platform integrates real-time processing, dynamic reporting, and modular architecture.</p>
-        <div class="tags">.NET Core | Azure | SQL Server | Angular | Microservices</div>  
+    <!-- Experience Highlights -->
+    <section id="experience" class="section experience-section">
+      <div class="section-header fade-in-up">
+        <span class="section-number">02.</span>
+        <h2 class="section-title">Key Achievements</h2>
+        <div class="section-line"></div>
       </div>
-      <div class="card">
-        <h3>Alarm Engine with Deadband & Persistence</h3>
-        <p>Built a highly optimized Azure-based alarm system reducing processing time from 3 hours to 25 seconds. Integrated advanced logic to prevent false alarms.</p>
-        <div class="tags">C# | Azure Functions | SQL Server</div>
+      <div class="experience-grid">
+        <div class="experience-card fade-in-up">
+          <div class="experience-icon">⚡</div>
+          <h3>Performance Optimization</h3>
+          <p>Reduced alarm processing time from <strong>3 hours to 25 seconds</strong> - a 7200x improvement using optimized algorithms and Azure Functions.</p>
+        </div>
+        <div class="experience-card fade-in-up">
+          <div class="experience-icon">🏗️</div>
+          <h3>Architecture Leadership</h3>
+          <p>Leading development of enterprise SaaS platform serving multiple industries with real-time processing and modular microservices architecture.</p>
+        </div>
+        <div class="experience-card fade-in-up">
+          <div class="experience-icon">☁️</div>
+          <h3>Cloud Expertise</h3>
+          <p>Designed and deployed production-grade Azure solutions using Functions, Logic Apps, App Services, and Azure DevOps with 99.7% uptime.</p>
+        </div>
+        <div class="experience-card fade-in-up">
+          <div class="experience-icon">🤖</div>
+          <h3>AI SaaS Development</h3>
+          <p>Built multiple AI-powered SaaS products including an AI Resume Generator integrating OpenAI, Stripe payments, and ElevenLabs voice synthesis. Created YouTube automation system for AI-driven content generation.</p>
+        </div>
+        <div class="experience-card fade-in-up">
+          <div class="experience-icon">🔗</div>
+          <h3>Blockchain & Web3</h3>
+          <p>Developed decentralized applications (dApps) using smart contracts and blockchain integrations. IBM Blockchain certified developer with expertise in distributed ledger technology.</p>
+        </div>
+        <div class="experience-card fade-in-up">
+          <div class="experience-icon">💰</div>
+          <h3>Financial Systems</h3>
+          <p>Designed and implemented dashboards and reporting tools processing <strong>millions of financial transactions</strong> with real-time analytics and comprehensive audit trails.</p>
+        </div>
       </div>
-      <div class="card">
-        <h3>Fuel Reconciliation Portal</h3>
-        <p>Developed a web portal for fuel stations to manage daily/weekly/monthly operations and detect losses using SIR logic.</p>
-        <div class="tags">ASP.NET MVC | SQL | Power BI | Azure</div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+      <div class="section-header fade-in-up">
+        <span class="section-number">03.</span>
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="section-line"></div>
       </div>
       
-    </section>
+      <div class="project-card featured fade-in-up">
+        <div class="project-content">
+          <div class="project-label">Featured Project</div>
+          <h3 class="project-title">Enterprise SaaS Platform</h3>
+          <div class="project-description">
+            <p>Leading the development of a large-scale SaaS solution for operational data management and analytics across multiple industries. The platform integrates <strong>real-time processing</strong>, <strong>dynamic reporting</strong>, and <strong>modular microservices architecture</strong>. Handles millions of data points daily with advanced caching and optimization strategies.</p>
+          </div>
+          <div class="project-tech">
+            <span>.NET Core</span>
+            <span>Azure</span>
+            <span>SQL Server</span>
+            <span>Angular</span>
+            <span>Microservices</span>
+            <span>Redis</span>
+          </div>
+        </div>
+        <div class="project-visual">
+          <div class="project-visual-placeholder">
+            <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <rect x="20" y="40" width="160" height="120" rx="8" fill="currentColor" opacity="0.1"/>
+              <rect x="30" y="60" width="50" height="40" rx="4" fill="currentColor" opacity="0.3"/>
+              <rect x="90" y="60" width="50" height="40" rx="4" fill="currentColor" opacity="0.3"/>
+              <rect x="150" y="60" width="20" height="40" rx="4" fill="currentColor" opacity="0.3"/>
+              <circle cx="60" cy="130" r="15" fill="currentColor" opacity="0.5"/>
+              <circle cx="115" cy="130" r="15" fill="currentColor" opacity="0.5"/>
+            </svg>
+          </div>
+        </div>
+      </div>
 
-    <section id="personal-projects">
-      <h2>Personal Projects</h2>
-      <div class="card">
-        <h3>YouTube Automation System</h3>
-        <p>End-to-end pipeline that creates, voices, captions, and uploads AI-generated Shorts using GPT and ElevenLabs. Built to explore AI + content automation workflows.</p>
-        <div class="tags">Python | GPT | ElevenLabs | YouTube API</div>
+      <!-- Workplace Projects -->
+      <div class="projects-category">
+        <h3 class="category-title fade-in-up">
+          <span class="category-icon">💼</span>
+          Workplace Projects
+        </h3>
+        <div class="projects-grid">
+          <div class="project-card fade-in-up">
+            <div class="project-header">
+              <div class="project-icon">🔄</div>
+              <h3>Fuel Data ETL Pipeline</h3>
+            </div>
+            <p>Architected and built a robust ETL pipeline that collects data from <strong>1000+ fuel stations</strong>, transforms it in real-time, and ingests into Azure SQL Database. The system handles <strong>millions of records per second</strong> with zero data loss, utilizing advanced batching and parallel processing techniques to maintain database stability under extreme load.</p>
+            <div class="project-tech">
+              <span>C#</span>
+              <span>Azure Functions</span>
+              <span>SQL Server</span>
+              <span>Azure Service Bus</span>
+              <span>ETL</span>
+              <span>Data Pipeline</span>
+            </div>
+            <div class="project-metrics">
+              <div class="metric">
+                <span class="metric-value">1000+</span>
+                <span class="metric-label">Stations</span>
+              </div>
+              <div class="metric">
+                <span class="metric-value">Millions/s</span>
+                <span class="metric-label">Records</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card fade-in-up">
+            <div class="project-header">
+              <div class="project-icon">📈</div>
+              <h3>Fuel Analytics Dashboard</h3>
+            </div>
+            <p>Developed a comprehensive analytics platform providing high-end business intelligence to fuel station operators. Features include <strong>reconciliation reports</strong>, <strong>real-time tank level monitoring</strong>, <strong>delivery tracking</strong>, and intelligent alarm systems that raise critical and warning alerts. Delivers detailed operational data crucial for business decisions and regulatory compliance.</p>
+            <div class="project-tech">
+              <span>ASP.NET MVC</span>
+              <span>SQL Server</span>
+              <span>Power BI</span>
+              <span>Azure</span>
+              <span>SignalR</span>
+              <span>Chart.js</span>
+            </div>
+            <div class="project-highlights">
+              <div class="highlight-item">✓ Real-time Tank Monitoring</div>
+              <div class="highlight-item">✓ SIR Reconciliation</div>
+              <div class="highlight-item">✓ Critical Alarms</div>
+              <div class="highlight-item">✓ Delivery Analytics</div>
+            </div>
+          </div>
+
+          <div class="project-card fade-in-up">
+            <div class="project-header">
+              <div class="project-icon">⚡</div>
+              <h3>Alarm Engine with Deadband & Persistence</h3>
+            </div>
+            <p>Built a highly optimized Azure-based alarm system reducing processing time from <strong>3 hours to 25 seconds</strong>, optimizing alerts across <strong>300,000+ events</strong>. Integrated advanced deadband logic and persistence mechanisms to prevent false alarms and ensure data integrity.</p>
+            <div class="project-tech">
+              <span>C#</span>
+              <span>Azure Functions</span>
+              <span>SQL Server</span>
+              <span>Redis Cache</span>
+            </div>
+            <div class="project-metrics">
+              <div class="metric">
+                <span class="metric-value">7200×</span>
+                <span class="metric-label">Faster</span>
+              </div>
+              <div class="metric">
+                <span class="metric-value">300K+</span>
+                <span class="metric-label">Events</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Personal Projects -->
+      <div class="projects-category">
+        <h3 class="category-title fade-in-up">
+          <span class="category-icon">🚀</span>
+          Personal Projects
+        </h3>
+        <div class="projects-grid">
+          <div class="project-card fade-in-up">
+            <div class="project-header">
+              <div class="project-icon">📝</div>
+              <h3>AI Resume Generator SaaS</h3>
+            </div>
+            <p>Full-stack SaaS platform that generates professional resumes using <strong>OpenAI GPT</strong>. Features include voice synthesis with <strong>ElevenLabs</strong>, payment integration via <strong>Stripe</strong>, and automated content generation. Built to explore monetization of AI-powered tools.</p>
+            <div class="project-tech">
+              <span>C# .NET</span>
+              <span>OpenAI API</span>
+              <span>ElevenLabs</span>
+              <span>Stripe</span>
+              <span>Azure</span>
+              <span>SQL Server</span>
+            </div>
+            <div class="project-highlights">
+              <div class="highlight-item">✓ AI Content Generation</div>
+              <div class="highlight-item">✓ Voice Synthesis</div>
+              <div class="highlight-item">✓ Payment Integration</div>
+              <div class="highlight-item">✓ Full SaaS Platform</div>
+            </div>
+          </div>
+
+          <div class="project-card fade-in-up">
+            <div class="project-header">
+              <div class="project-icon">🎥</div>
+              <h3>YouTube Automation System</h3>
+            </div>
+            <p>End-to-end pipeline that creates, voices, captions, and uploads AI-generated YouTube Shorts using GPT and ElevenLabs. Built to explore AI-driven content automation workflows and modern video generation.</p>
+            <div class="project-tech">
+              <span>Python</span>
+              <span>OpenAI GPT</span>
+              <span>ElevenLabs</span>
+              <span>YouTube API</span>
+              <span>FFmpeg</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/ujavedodl" target="_blank" class="project-link">
+                <span>→</span> View Code
+              </a>
+            </div>
+          </div>
+
+          <div class="project-card fade-in-up">
+            <div class="project-header">
+              <div class="project-icon">🔗</div>
+              <h3>Decentralized Applications (dApps)</h3>
+            </div>
+            <p>Built blockchain-based decentralized applications using <strong>smart contracts</strong> and Web3 integrations. Developed during freelance work, exploring distributed ledger technology and cryptocurrency ecosystems.</p>
+            <div class="project-tech">
+              <span>Solidity</span>
+              <span>Smart Contracts</span>
+              <span>Web3.js</span>
+              <span>Blockchain</span>
+              <span>Ethereum</span>
+            </div>
+            <div class="project-highlights">
+              <div class="highlight-item">✓ IBM Blockchain Certified</div>
+              <div class="highlight-item">✓ Smart Contract Development</div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="tech">
-      <h2>Tech Stack</h2>
-      <div class="tags-grid">
-        <span class="tag">C#</span>
-        <span class="tag">Python</span>
-        <span class="tag">JavaScript</span>
-        <span class="tag">SQL</span>
-        <span class="tag">.NET Core</span>
-        <span class="tag">ASP.NET MVC</span>
-        <span class="tag">Angular</span>
-        <span class="tag">Azure Functions</span>
-        <span class="tag">Logic Apps</span>
-        <span class="tag">App Services</span>
-        <span class="tag">SQL Server</span>
-        <span class="tag">Entity Framework</span>
-        <span class="tag">Azure DevOps</span>
-        <span class="tag">Postman</span>
-        <span class="tag">Swagger</span>
+    <!-- Tech Stack Section -->
+    <section id="tech" class="section tech-section">
+      <div class="section-header fade-in-up">
+        <span class="section-number">04.</span>
+        <h2 class="section-title">Tech Stack & Skills</h2>
+        <div class="section-line"></div>
+      </div>
+      
+      <div class="tech-categories">
+        <div class="tech-category fade-in-up">
+          <h3 class="tech-category-title">
+            <span class="tech-icon">💻</span>
+            Languages
+          </h3>
+          <div class="tech-grid">
+            <div class="tech-item">
+              <span class="tech-name">C#</span>
+              <div class="tech-bar">
+                <div class="tech-progress" style="width: 95%"></div>
+              </div>
+            </div>
+            <div class="tech-item">
+              <span class="tech-name">SQL</span>
+              <div class="tech-bar">
+                <div class="tech-progress" style="width: 90%"></div>
+              </div>
+            </div>
+            <div class="tech-item">
+              <span class="tech-name">Python</span>
+              <div class="tech-bar">
+                <div class="tech-progress" style="width: 80%"></div>
+              </div>
+            </div>
+            <div class="tech-item">
+              <span class="tech-name">JavaScript</span>
+              <div class="tech-bar">
+                <div class="tech-progress" style="width: 75%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tech-category fade-in-up">
+          <h3 class="tech-category-title">
+            <span class="tech-icon">🔧</span>
+            Frameworks & Tools
+          </h3>
+          <div class="tags-grid">
+            <span class="tech-tag">.NET Core</span>
+            <span class="tech-tag">ASP.NET MVC</span>
+            <span class="tech-tag">Entity Framework</span>
+            <span class="tech-tag">WinForms</span>
+            <span class="tech-tag">Angular</span>
+            <span class="tech-tag">jQuery</span>
+            <span class="tech-tag">Postman</span>
+            <span class="tech-tag">Swagger</span>
+          </div>
+        </div>
+
+        <div class="tech-category fade-in-up">
+          <h3 class="tech-category-title">
+            <span class="tech-icon">☁️</span>
+            Cloud & DevOps
+          </h3>
+          <div class="tags-grid">
+            <span class="tech-tag">Azure Functions</span>
+            <span class="tech-tag">Logic Apps</span>
+            <span class="tech-tag">App Services</span>
+            <span class="tech-tag">Azure Data Factory</span>
+            <span class="tech-tag">Azure DevOps</span>
+            <span class="tech-tag">SQL Server</span>
+            <span class="tech-tag">Redis Cache</span>
+            <span class="tech-tag">Git</span>
+          </div>
+        </div>
+
+        <div class="tech-category fade-in-up">
+          <h3 class="tech-category-title">
+            <span class="tech-icon">🤖</span>
+            AI & Integrations
+          </h3>
+          <div class="tags-grid">
+            <span class="tech-tag">OpenAI API</span>
+            <span class="tech-tag">ElevenLabs</span>
+            <span class="tech-tag">Stripe</span>
+            <span class="tech-tag">YouTube API</span>
+            <span class="tech-tag">Jira API</span>
+            <span class="tech-tag">Power BI</span>
+          </div>
+        </div>
+
+        <div class="tech-category fade-in-up">
+          <h3 class="tech-category-title">
+            <span class="tech-icon">⛓️</span>
+            Blockchain & Web3
+          </h3>
+          <div class="tags-grid">
+            <span class="tech-tag">Solidity</span>
+            <span class="tech-tag">Smart Contracts</span>
+            <span class="tech-tag">Web3.js</span>
+            <span class="tech-tag">Ethereum</span>
+            <span class="tech-tag">Blockchain</span>
+          </div>
+        </div>
+
+        <div class="tech-category fade-in-up">
+          <h3 class="tech-category-title">
+            <span class="tech-icon">🎯</span>
+            Specializations
+          </h3>
+          <div class="specializations">
+            <div class="specialization-item">Microservices Architecture</div>
+            <div class="specialization-item">Performance Optimization</div>
+            <div class="specialization-item">Cloud-Native Development</div>
+            <div class="specialization-item">API Design & Development</div>
+            <div class="specialization-item">Database Design & Optimization</div>
+            <div class="specialization-item">Real-Time Data Processing</div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="resume">
-      <h2>Resume</h2>
-      <a href="resume.pdf" target="_blank" class="btn">Download My Resume (PDF)</a>
-    </section>
-
-    <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: <a href="mailto:usmanjaved4076@gmail.com">usmanjaved4076@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/usman-javed-0957439b/" target="_blank">linkedin.com/in/usmanjaved</a></p>
-      <p>GitHub: <a href="https://github.com/ujavedodl" target="_blank">github.com/ujavedodl</a></p>
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+      <div class="section-header fade-in-up">
+        <span class="section-number">05.</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-content fade-in-up">
+        <p class="contact-text">
+          <strong>🚀 Actively seeking Senior Software Engineer roles | Ready for immediate onboarding</strong>
+        </p>
+        <p class="contact-text">
+          I'm open to exciting opportunities in SaaS development, cloud architecture, and AI integration. 
+          Whether you want to discuss a role, collaboration, or just connect, feel free to reach out!
+        </p>
+        <div class="contact-links">
+          <a href="mailto:usmanjaved4076@gmail.com" class="contact-card">
+            <div class="contact-icon">📧</div>
+            <div class="contact-info">
+              <div class="contact-label">Email</div>
+              <div class="contact-value">usmanjaved4076@gmail.com</div>
+            </div>
+          </a>
+          <a href="https://www.linkedin.com/in/usman-javed-0957439b/" target="_blank" class="contact-card">
+            <div class="contact-icon">💼</div>
+            <div class="contact-info">
+              <div class="contact-label">LinkedIn</div>
+              <div class="contact-value">Usman Javed</div>
+            </div>
+          </a>
+          <a href="https://github.com/ujavedodl" target="_blank" class="contact-card">
+            <div class="contact-icon">🐙</div>
+            <div class="contact-info">
+              <div class="contact-label">GitHub</div>
+              <div class="contact-value">ujavedodl</div>
+            </div>
+          </a>
+        </div>
+        <div class="resume-download">
+          <a href="Muhammad_Usman_Javed_Resume.pdf" download class="btn btn-primary btn-large">
+            <span>📄</span> Download Resume (PDF)
+          </a>
+        </div>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Usman. All rights reserved.</p>
+  <footer class="footer">
+    <p>Designed & Built by Usman Javed</p>
+    <p class="footer-copyright">&copy; 2025 All rights reserved.</p>
   </footer>
 
-  <script>
-    const toggle = document.getElementById('theme-toggle');
-    toggle.addEventListener('click', () => {
-      document.body.classList.toggle('dark');
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 </html>
