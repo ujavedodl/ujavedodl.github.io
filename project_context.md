@@ -55,9 +55,10 @@ A modern, interactive personal portfolio website for Usman Javed, Senior Softwar
 - **External Links**: GitHub and project links
 
 ### 6. Tech Stack & Skills
-- **Categorized Skills**: Organized by Languages, Frameworks, Cloud, and Specializations
+- **Categorized Skills**: Organized by Languages, Frameworks, Cloud, AI & Integrations, Blockchain, Certifications, and Specializations
 - **Animated Progress Bars**: Visual skill level indicators with shimmer effect
 - **Interactive Tags**: Hoverable tech badges
+- **Certifications & Credentials Section**: Interactive badge display featuring WES Verified International Academic Qualifications (Credly badge), IBM Blockchain Essentials, and IBM Blockchain Foundation Developer certifications
 - **Specializations Grid**: Key competencies in card format
 
 ### 7. Contact Section
@@ -153,7 +154,7 @@ portfolio/
 - [ ] Add a blog section for technical articles
 - [ ] Integrate GitHub API to show live repository stats
 - [ ] Add testimonials/recommendations section
-- [ ] Include certifications and education section
+- [x] Include certifications and education section (COMPLETED - WES badge integrated)
 - [ ] Add a contact form with email integration
 - [ ] Implement more advanced animations (GSAP library)
 - [ ] Add project case studies with detailed breakdowns
@@ -318,6 +319,7 @@ portfolio/
 - Freelance experience on PeoplePerHour (2017-2020)
 
 ## Version History
+- **v2.3** (2025-11-07): Added Certifications & Credentials section with WES Verified International Academic Qualifications badge (Credly integration), IBM Blockchain certifications, responsive certification cards with hover effects
 - **v2.2** (2025-11-04): Added CV-based achievements: AI Resume Generator SaaS, Blockchain/dApps, Financial Systems, 300K+ events metric, expanded tech stack with blockchain & AI tools
 - **v2.1** (2025-11-04): Added Fuel Data ETL project, updated Fuel Analytics Dashboard, reorganized into Workplace/Personal sections
 - **v2.0** (2025-11-04): Complete modern redesign with animations, dark mode, interactive features
@@ -325,6 +327,6 @@ portfolio/
 
 ---
 
-Last Updated: November 4, 2025
+Last Updated: November 7, 2025
 
 
