@@ -27,7 +27,7 @@ A modern, interactive personal portfolio website for Usman Javed, Senior Softwar
 
 ### 2. Statistics Dashboard
 - **Animated Counters**: Numbers count up when section comes into view
-- **Key Metrics**: Years of experience, projects delivered, system uptime, performance improvements
+- **Key Metrics**: 5 years experience, 15+ projects delivered, 3+ SaaS products launched, 20+ technologies mastered
 - **Visual Cards**: Hover effects with elevation changes
 
 ### 3. About Section
@@ -140,11 +140,11 @@ portfolio/
 
 ## Key Achievements Highlighted
 
-1. **Performance Optimization**: 7200x improvement (3 hours → 25 seconds)
-2. **System Reliability**: 99.7% uptime on production systems
-3. **Experience**: 5+ years in software engineering
-4. **Portfolio**: 25+ projects delivered
-5. **Leadership**: Leading enterprise SaaS platform development
+1. **Experience**: 5+ years in software engineering
+2. **Portfolio**: 15+ projects delivered
+3. **Product Development**: 3+ SaaS products launched (AI Resume Generator, YouTube Automation, Enterprise Platform)
+4. **Technical Versatility**: 20+ technologies mastered across backend, cloud, AI, and blockchain
+5. **Performance Optimization**: 7200x improvement (3 hours → 25 seconds)
 6. **Scale**: ETL pipeline handling 1000+ fuel stations with millions of records/second
 
 ## Upcoming / In-Progress Features
@@ -304,7 +304,11 @@ portfolio/
 
 ### Metrics Enhanced
 - Alarm Engine: Now shows 300K+ events processed
-- Stats Dashboard: Updated to show "1000+ Fuel Stations Connected"
+- Stats Dashboard: Updated to reflect professional achievements:
+  - 5 Years Experience
+  - 15+ Project Count
+  - 3+ SaaS Products Launched
+  - 20+ Technologies Mastered
 
 ### Professional Highlights
 - Actively seeking Senior Software Engineer roles
