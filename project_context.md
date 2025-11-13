@@ -150,7 +150,7 @@ portfolio/
 
 ## Upcoming / In-Progress Features
 
-### Potential Enhancements
+### Portfolio Site Enhancements
 - [ ] Add a blog section for technical articles
 - [ ] Integrate GitHub API to show live repository stats
 - [ ] Add testimonials/recommendations section
@@ -161,6 +161,12 @@ portfolio/
 - [ ] Include a timeline of career progression
 - [ ] Add language translation support
 - [ ] Implement analytics tracking
+
+### Pakistan Stock Market Fear & Greed Index
+- [x] Phase 1: Calculation engine working (COMPLETED)
+- [x] Phase 2: Build public website with gauge visualization (COMPLETED - Live at https://www.psx-fear-greed.com/)
+- [ ] Phase 3: Add real social media scraping (Twitter, Facebook, Reddit)
+- [ ] Phase 4: Add API endpoints and monetization
 
 ## Technical Details
 
@@ -275,11 +281,13 @@ portfolio/
 - Complete monetization model
 - Tech: C# .NET, OpenAI API, ElevenLabs, Stripe, Azure, SQL Server
 
-#### 2. YouTube Automation System
+#### 2. YouTube Automation System (AutoTube)
 - End-to-end AI-powered content pipeline
 - Automated creation, voicing, and captioning
 - GPT and ElevenLabs integration
 - Automated uploads to YouTube
+- **Live SaaS Platform:** [https://autotube.org/](https://autotube.org/)
+- Features: Single video generation, bulk generation, smart autoclipper, trend intelligence, multi-channel management
 - Tech: Python, OpenAI GPT, ElevenLabs, YouTube API, FFmpeg
 
 #### 3. Decentralized Applications (dApps)
@@ -289,6 +297,41 @@ portfolio/
 - Distributed ledger technology
 - IBM Blockchain certified
 - Tech: Solidity, Smart Contracts, Web3.js, Ethereum, Blockchain
+
+#### 4. Pakistan Stock Market Fear & Greed Index
+- First-ever Pakistan Stock Market (PSX) Fear and Greed Index
+- Multi-source data aggregation and sentiment analysis
+- Real-time calculation engine with automated hourly updates
+- Advanced normalization using z-score methodology
+- **Live Website:** [https://www.psx-fear-greed.com/](https://www.psx-fear-greed.com/)
+- Tech: Python, Yahoo Finance API, RSS feeds, Google Trends API, PostgreSQL (Neon), GitHub Actions
+- **Data Sources:**
+  - Market Data: Yahoo Finance (KSE-100 index)
+  - News Sentiment: RSS feeds from Pakistani business news
+  - Google Trends: PSX-related searches in Pakistan
+  - Social Media: Twitter, Facebook, Reddit (Phase 2)
+- **Calculation Components (100% total):**
+  - Momentum (25%): 14-day rate of change
+  - Volatility (20%): 30-day volatility (inverted)
+  - News (20%): RSS sentiment analysis
+  - Social (20%): Social media sentiment
+  - Trends (15%): Google Trends interest
+- **Normalization Process:**
+  - Calculate z-score against 90-day baseline
+  - Clip to [-5, 5] range
+  - Scale to [0, 100] with 50 as neutral
+  - Invert fear signals (volatility)
+- **Deployment:** Automated hourly execution via GitHub Actions
+- **Database:** PostgreSQL (Neon) with `fg_index_readings` table
+- **Status:** Phase 2 Complete (public website live), Phase 3 In Progress (real social media scraping)
+- **Monitoring:**
+  - Check calculation logs: `pm2 logs psx-sentiment`
+  - View recent readings: `SELECT * FROM fg_index_readings ORDER BY timestamp DESC LIMIT 5;`
+- **Troubleshooting:**
+  - **Database Connection Issues:** Verify DATABASE_URL in .env, check Neon database is active, test with `npm run test-db`
+  - **Yahoo Finance Issues:** KSE-100 symbol might not be available, check console logs for alternative symbols, consider fallback to PSX website scraping
+  - **News RSS Issues:** Some feeds might be down, check individual feed URLs, system continues with available feeds
+  - **PM2 Issues:** Check status with `pm2 status`, view logs with `pm2 logs psx-sentiment`, restart with `pm2 restart psx-sentiment`
 
 ## New Additions from CV Review
 
@@ -302,6 +345,7 @@ portfolio/
 - **Cloud**: Azure Data Factory, Git
 - **AI & APIs**: OpenAI API, ElevenLabs, Stripe, YouTube API, Jira API, Power BI
 - **Blockchain**: Solidity, Smart Contracts, Web3.js, Ethereum
+- **Data & Analytics**: Yahoo Finance API, RSS feeds, Google Trends API, PostgreSQL, GitHub Actions, Sentiment Analysis
 
 ### Metrics Enhanced
 - Alarm Engine: Now shows 300K+ events processed
@@ -319,6 +363,8 @@ portfolio/
 - Freelance experience on PeoplePerHour (2017-2020)
 
 ## Version History
+- **v2.5** (2025-01-XX): Added live website links for PSX Fear & Greed Index (https://www.psx-fear-greed.com/) and AutoTube (https://autotube.org/), updated portfolio with enhanced project descriptions and live links, marked Phase 2 of PSX project as complete
+- **v2.4** (2025-01-XX): Added Pakistan Stock Market Fear & Greed Index project documentation - first-ever PSX sentiment analysis tool with multi-source data aggregation, automated hourly updates via GitHub Actions, and advanced normalization methodology
 - **v2.3** (2025-11-07): Added Certifications & Credentials section with WES Verified International Academic Qualifications badge (Credly integration), IBM Blockchain certifications, responsive certification cards with hover effects
 - **v2.2** (2025-11-04): Added CV-based achievements: AI Resume Generator SaaS, Blockchain/dApps, Financial Systems, 300K+ events metric, expanded tech stack with blockchain & AI tools
 - **v2.1** (2025-11-04): Added Fuel Data ETL project, updated Fuel Analytics Dashboard, reorganized into Workplace/Personal sections
@@ -327,6 +373,6 @@ portfolio/
 
 ---
 
-Last Updated: November 7, 2025
+Last Updated: January 2025
 
 
